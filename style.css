@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100&family=Beau+Rivage&family=Bebas+Neue&family=Comfortaa:wght@600&family=Festive&family=Grape+Nuts&family=Montserrat:wght@400;900&family=Ms+Madi&family=Nunito&family=Nunito+Sans&family=Open+Sans:wght@400;500;600&family=Oswald:wght@200;700&family=Poppins:wght@300;500&family=Quintessential&family=Roboto+Condensed:wght@400;700&family=RocknRoll+One&family=Smooch+Sans:wght@200&family=Spectral:wght@700&family=Updock&family=Vollkorn:wght@500&family=Water+Brush&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+header {
+  padding: 10px;
+  width: 100%;
+  background-color: #128596;
+}
+
+.wrap {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fig-menu {
+  display: none;
+}
+
+.fig-logo img {
+  width: 6em;
+}
+
+input {
+  background-image: url("Imagens/lupa.png");
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: contain;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 100px;
+  border: 2px solid black;
+}
+
+.navigation {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    display: none;
+  }
+
+  .fig-menu {
+    display: flex;
+  }
+
+  .fig-logo {
+    margin: 0 auto;
+  }
+}

@@ -64,6 +64,53 @@ a {
   color: white;
 }
 
+.img-fundo {
+  background-image: url("./Imagens/bob-plano.png");
+  width: 100%;
+  height: 50rem;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  background-color: #ffe5ac;
+  object-fit: cover;
+}
+
+.caixa-amigos {
+  padding: 5rem;
+}
+
+h1 {
+  color: #128596;
+  font-size: 5rem;
+  text-shadow: 0px 6px 4px grey;
+  letter-spacing: 4px;
+}
+
+.nav-amigos {
+  margin-top: 40px;
+}
+
+.nav-amigos ul {
+  list-style: none;
+}
+
+.nav-amigos li {
+  cursor: pointer;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.nav-amigos li:hover {
+  background-color: #febd81;
+}
+
+.nav-amigos a {
+  color: #d56e0e;
+  font-size: 1.8rem;
+}
+
+/* Aqui começa o @media */
 @media (max-width: 900px) {
   .navigation {
     display: none;
@@ -75,5 +122,48 @@ a {
 
   .fig-logo {
     margin: 0 auto;
+  }
+
+  .caixa-amigos {
+    padding: 0rem;
+  }
+
+  .caixa-amigos h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .nav-amigos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-amigos ul {
+    width: 40%;
+  }
+
+  .nav-amigos ul li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 574px) {
+  .caixa-amigos {
+    padding: 0rem;
+  }
+
+  .caixa-amigos h1 {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .caixa-amigos h1 {
+    text-align: center;
+    font-size: 2.5rem;
   }
 }

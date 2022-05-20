@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Comfortaa", cursive;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -108,6 +109,82 @@ h1 {
 .nav-amigos a {
   color: #d56e0e;
   font-size: 1.8rem;
+}
+
+.caixa-subtitulo {
+  padding: 2rem;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa-subtitulo h2 {
+  color: #128596;
+  font-size: 2rem;
+}
+
+.linha {
+  background-color: gainsboro;
+  width: 100px;
+  height: 5px;
+  position: relative;
+  left: 90px;
+}
+
+.fig-person {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  background-color: #128596;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-person {
+  width: 100%;
+  height: 15rem;
+  position: absolute;
+  top: -240px;
+  background-color: #bf7a59;
+  opacity: 0.9;
+  border-radius: 0px 0px 50px 50px;
+  padding: 3rem 1.2rem;
+  transition: 1s all;
+  z-index: 1;
+}
+
+.fig-person:hover .text-person {
+  top: 0px;
+}
+
+.text-person h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.text-person p {
+  color: white;
+  margin-top: 10px;
+}
+
+.personagem {
+  width: 50%;
+  text-align: center;
+}
+
+button {
+  background-color: #bf7a59;
+  border: none;
+  width: 150px;
+  padding: 1rem;
+  position: relative;
+  bottom: 30px;
+  right: 22px;
+  border-radius: 5px;
+  color: white;
 }
 
 /* Aqui começa o @media */
